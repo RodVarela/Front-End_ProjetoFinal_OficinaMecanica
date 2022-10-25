@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+div#tabela2 {
+    float: left;
+    position: absolute;
+    left: 430px;
+    top:150px;
+}
+
+table#contato {
+    border: 2px solid white;
+    color: white;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.514);
+    margin-top: 25px;
+}
+
+
+table#contato tr {
+    text-align: center;
+}
+
+
+table#contato td{
+    border: 1px solid rgb(235, 235, 191);
+    
+}
+
+table#contato{
+    width: auto;
+}
+td.camp{
+    width: 200px;
+}
+
+input.larg{
+    width: 365px;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+div.rodape5{
+    border-top: 1px solid rgb(107, 107, 107);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 598px;
+    background: url(../_img/asfalto.jpg) ;
+    background-size: 85%;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}

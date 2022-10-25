@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+div#curriculo {
+    float: left;
+    position: absolute;
+    left: 220px;
+    top: 220px;
+}
+
+body {
+    background-color: lightyellow;
+}
+
+
+h1, p {
+    text-align: center;
+    color: white;
+}   
+
+#divErro{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;  
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+p#msgErro{   
+    font-size: 20px;
+    margin: 0px;
+    color: red;
+        
+}
+
+table, td {
+    padding: 3px;
+    border: 1px solid;
+    border-color: darkblue;
+    background-color: rgb(245, 243, 243, 0.8);
+}
+
+.fundoescuro {
+    background-color: rgb(202, 202, 202);
+}
+
+.fundoescuroII {
+    background-color: rgb(196, 196, 248);
+    color: rgb(104, 104, 104)
+}
+
+.centralizado {
+    text-align: center;
+}
+
+tr.centralizado h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: brown;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+tr.descTrab {
+    height: 60pt;
+}
+
+td.empresas {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+input {
+    background-color: rgb(248, 239, 228);
+    border: 1px solid;
+    border-color: rgb(214, 167, 105);
+}
+
+
+#optionUF{
+    width: 170px;
+    background-color: rgb(248, 239, 228);
+    border: 1px solid;
+    border-color: rgb(214, 167, 105);    
+}
+
+footer {
+    background-color: rgb(214, 214, 214);
+    height: 60px;
+}
+
+footer > p {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+table#tabelaCV {
+    border-radius: 10px;
+    margin: auto;
+}
+
+div.buttons {
+    text-align: center;
+}
+
+input#idEnviar {
+    width: 150pt; 
+    height: 50pt; 
+    background-color: rgb(0, 225, 255);
+    text-transform: uppercase;
+    border-color: darkblue;
+    border-radius: 3px;
+    box-shadow: 2pt 2pt 2pt rgb(78, 77, 77);
+    margin: 10px;
+}
+
+input#idEnviar:hover {
+    background-color: rgb(5, 167, 189);
+    color: white;
+}
+
+input#idApagar {
+    width: 150pt; 
+    height: 50pt; 
+    background-color: rgb(243, 129, 76);
+    text-transform: uppercase;
+    border-color: darkred;
+    border-radius: 3px;
+    box-shadow: 2pt 2pt 2pt rgb(78, 77, 77);
+    margin: 10px;
+}
+
+input#idApagar:hover {
+    background-color: rgb(190, 99, 57);
+    color: white
+}

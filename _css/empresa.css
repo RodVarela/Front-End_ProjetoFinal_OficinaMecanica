@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: content-box;
+}
+
+div#containerQuiz{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(54, 143, 42, 0.616);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 7px;
+}
+
+p#linkQuiz{
+    
+    text-align: center;
+    width: 700px;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+#aLink{
+    color: white;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+    width: 900px;
+    margin: auto;
+    display: block;
+}
+
+div#carrosselImagens{
+    position: relative;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+p#nomeServico{
+    text-align: center;
+    background-color: blue;
+    border: 1px solid white;
+    width: 450px;
+    left: 449px;
+    top: 0px;
+    position: absolute;
+}
+
+#itela{
+    width: 450px;
+    height: 310px;
+    border: 1px solid white;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+#ibotao1, #ibotao2{
+    border-radius: 180px;
+    height: 40px;
+}
+
+#ibotao1:hover{
+    background-color: rgb(115, 197, 224);
+    transition: 1s;
+}
+
+#ibotao2:hover{
+    background-color: rgb(115, 197, 224);
+    transition: 1s;
+}
+
+
+
+div#central-multimidia {
+    width: 900px;
+    height: 466px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 45px;
+    background: url("../_img/painei-recortado.png") no-repeat;
+    position: relative;
+}
+
+video#video1 {
+    /*display: block;*/
+    position: absolute;
+    top: 66px;
+    left: 295px;
+    width: 362px;
+    height: 205px;
+
+}
+
+div#tabela1 {
+    float: left;
+    position: absolute;
+    left: 225px;
+}
+
+table#nossos-contatos {
+    border: 2px solid white;
+    color: white;
+    width: 900px;
+    background-color: rgba(128, 128, 128, 0.514);
+    margin-top: 25px;
+}
+
+
+table#nossos-contatos tr {
+    text-align: center;
+}
+
+table#nossos-contatos tr.titulo {
+    background-color: rgba(32, 32, 133, 0.747);
+    font-weight: bold;
+}
+
+table#nossos-contatos td{
+    border: 1px solid yellow;
+    width: 100px;
+}
+
+table#nossos-contatos td.logradouro{
+    width: 140px;
+}
+
+
+div.rodape3{
+    border-top: 1px solid rgb(107, 107, 107);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 1680px;
+    background: url(../_img/asfalto.jpg) ;
+    background-size: 85%;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}

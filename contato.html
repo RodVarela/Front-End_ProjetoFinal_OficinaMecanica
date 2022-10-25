@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilos.css">
+    <link rel="stylesheet" href="_css/contato.css">
+
+    <script type="text/javascript" src="_js/contato.js"></script>
+
+    <title>Contato</title>
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <img id="logo" src="_img/logo.png">
+
+        <nav class="menu">
+            <ul class="lista_menu">
+                <li class="lista"><a href="main.html">Principal</a></li>
+                <li class="lista"><a href="empresa.html">Sobre</a></li>
+                <li class="lista"><a href="servicos.html">Serviços</a></li>
+                <li class="lista"><a href="vendas.html">Vendas</a></li>
+                <li class="lista"><a href="contato.html">Contato</a></li>
+                <li class="lista"><a href="trabalhe.html">Trabalhe Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="tabela2" >
+        <form action="contatoRecebido.html" method="POST">
+            <table id="contato">
+                <tr>
+                    <td>Nome:</td>
+                    <td class="camp"><input class="larg" id="iNome" type="text" value="" placeholder="Digite o seu nome" onclick="corDeFundo('1')" onblur="verificarNome()" onkeypress="removerVaziosNome()"></td>
+                </tr>
+                <tr>
+                    <td>Nascimento:</td>
+                    <td class="camp"><input class="larg" id="iData" type="text" value="" placeholder="dd/mm/aaaa" onclick="corDeFundo('2')" onblur="formatoData()" onkeypress="verificarData()"></td>
+                </tr>
+                <tr>
+                    <td>Genero:</td>
+                    <td>
+                        <input type="radio" name="nGenero" value="M">Masculino
+                        <input type="radio" name="nGenero" value="F">Feminino
+                    </td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td class="camp"><input class="larg" id="iEndereco" type="text" value="" placeholder="Digite o seu logradouro. Av, rua..." onclick="corDeFundo('3')" onblur="verificarEndereco()"></td>
+                </tr>
+                <tr>
+                    <td>Bairro:</td>
+                    <td class="camp"><input class="larg" id="iBairro" type="text" value="" placeholder="Digite o seu bairro" onclick="corDeFundo('4')" onblur="verificarLugar('iBairro')" onkeypress="removerVaziosLugar('iBairro')"></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td class="camp"><input class="larg" id="iCidade" type="text" value="" placeholder="Digite a sua cidade" onclick="corDeFundo('5')" onblur="verificarLugar('iCidade')" onkeypress="removerVaziosLugar('iCidade')"></td>
+                </tr>
+                <tr>
+                    <td>UF:</td>
+                    <td class="camp">
+                        <select style="width: 370px;" required>
+                            <option value="" disabled selected hidden>Selecionar UF</option>
+                            <option value="RJ">RJ</option>
+                            <option value="SP">SP</option>
+                            <option value="MG">MG</option>
+                            <option value="ES">ES</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td class="camp"><input class="larg" id="iEmail" type="email" value="" placeholder="Digite o seu email" onclick="corDeFundo('6')" onblur="verificarEmail()"></td>
+                </tr>
+                <tr>
+                    <td>Mensagem</td>
+                    <td>
+                        <textarea cols="50" rows="5" placeholder="Deixe aqui sua mensagem!" id="iMensagem"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="ENVIAR" id="idEnviar">
+                        <input type="reset" value="APAGAR" id="idApagar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        <p id="msgErro"></p>
+    </div>
+           
+
+    <div class="rodape5">
+        .
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/quiz.css">
+
+    <script type="text/javascript" src="_js/quiz.js"></script>
+
+    <title>Quiz</title>
+</head>
+<body>
+    <header class="cabecalho">
+        
+        <img id="logo" src="_img/logo.png">
+
+        <nav class="menu">
+            <ul class="lista_menu">
+                <li class="lista"><a href="main.html">Principal</a></li>
+                <li class="lista"><a href="empresa.html">Sobre</a></li>
+                <li class="lista"><a href="servicos.html">Serviços</a></li>
+                <li class="lista"><a href="vendas.html">Vendas</a></li>
+                <li class="lista"><a href="contato.html">Contato</a></li>
+                <li class="lista"><a href="trabalhe.html">Trabalhe Conosco</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="tituloQuiz">
+        <h1>BEM VINDO AO QUIZ DA JK REPAIR</h1>
+        <h3>Complete o Quiz, pontue 100% e ganhe um serviço de sua escolha!</h3>
+    </div>
+
+    <br><br>
+
+    <div class="perguntas" id="pergunta1">
+        <p>1. Em que ano nasceu a JK Repair?</p>
+        <input type="radio" name="ano" id="ano1" value="1999"><span>1999</span> <br> 
+        <input type="radio" name="ano" id="ano2" value="2005"><span id="anoC">2005</span> <br>
+        <input type="radio" name="ano" id="ano3" value="2013"><span>2013</span> <br>
+
+    </div>
+    <br>
+    <div class="perguntas" id="pergunta2">
+        <p>2. Em que cidade nasceu a JK Repair?</p>
+        <input type="radio" name="cidade" id="cidade1" value="Macaé"><span>Macaé</span> <br> 
+        <input type="radio" name="cidade" id="cidade2" value="Teresópolis"><span>Teresópolis</span> <br>
+        <input type="radio" name="cidade" id="cidade3" value="Rio de Janeiro"><span id="cidadeC">Rio de Janeiro</span> <br>
+
+    </div>
+    <br>
+    <div class="perguntas" id="pergunta3">
+        <p>3. Qual é o nosso ramo de atividades?</p>
+        <input type="radio" name="atividade" id="atividade1" value="Seguros"><span>Seguros</span> <br> 
+        <input type="radio" name="atividade" id="atividade2" value="Serviços Automotivos"><span id="servicoC">Serviços Automotivos</span> <br>
+        <input type="radio" name="atividade" id="atividade3" value="Varejo"><span>Varejo</span> <br>
+
+    </div>
+    <br>    
+    <div class="perguntas" id="pergunta4">
+        <p>4. Quantas lojas nós temos?</p>
+        <input type="radio" name="lojas" id="loja1" value="2"><span id="lojaC">2</span> <br> 
+        <input type="radio" name="lojas" id="loja2" value="3"><span>3</span> <br>
+        <input type="radio" name="lojas" id="loja3" value="5"><span>5</span> <br>
+
+    </div>
+    <br>
+    <div class="perguntas" id="pergunta5">
+        <p>5. Qual é a nossa meta?</p>
+        <input type="radio" name="meta" id="meta1" value="Satisfação TOTAL do Cliente"><span id="metaC">Satisfação TOTAL do Cliente</span> <br> 
+        <input type="radio" name="meta" id="meta2" value="Abrir um outro tipo de negócio"><span>Abrir um outro tipo de negócio</span> <br>
+        <input type="radio" name="meta" id="meta3" value="Ofereçer atendimento básico"><span>Ofereçer atendimento básico</span> <br>
+
+    </div>
+    
+    <div id="botaoEnviar">
+        <button id="Enviar" onclick="conferirResultado()">ENVIAR</button>
+    </div>
+    <div id="resultado">
+        <p id="resultadoPontos">ENVIE SUAS RESPOSTAS E CONFIRA SEU RESULTADO AQUI!</p>
+    </div>
+    
+    
+</body>
+</html>

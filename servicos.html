@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilos.css">
+    <link rel="stylesheet" href="_css/servicos.css">
+
+    <script type="text/javascript" src="_js/servicos.js"></script>
+
+    <title>Nossos Serviços</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img id="logo" src="_img/logo.png">
+
+        <nav class="menu">
+            <ul class="lista_menu">
+                <li class="lista"><a href="main.html">Principal</a></li>
+                <li class="lista"><a href="empresa.html">Sobre</a></li>
+                <li class="lista"><a href="servicos.html">Serviços</a></li>
+                <li class="lista"><a href="vendas.html">Vendas</a></li>
+                <li class="lista"><a href="contato.html">Contato</a></li>
+                <li class="lista"><a href="trabalhe.html">Trabalhe Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Serviços Automotivos</h1>
+    <div>
+        <p id="msgErro" style="text-align: center;"></p>  
+    </div>
+    
+
+    <div class="servicos">
+        <form action="pedidoRecebido.html" method="POST">
+            <table id="tabelaServicos">
+                <tr>
+                    <td class="campos"><input  type="checkbox" id="iRevMec" name="nRevMec" value="">
+                        <label for="iRevMec">Revisão Mecânica:</label>
+                    </td>
+                    <td><input  class="data" name="dataRevMec" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos"><input type="checkbox" id="iRevElet" name="nRevElet" value="">
+                        <label for="iRevElet">Revisão Elétrica</label>
+                    </td>
+                    <td><input class="data" name="dataRevElet" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos"><input type="checkbox" id="iAlin" name="nAlin" value="">
+                        <label for="iAlin">Alinhamento:</label>
+                    </td>
+                    <td><input class="data" name="dataAlin" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos"><input type="checkbox" id="iBal" name="nBal" value="">
+                        <label for="iBal">Balanceamento:</label>
+                    </td>
+                    <td><input class="data" name="dataBal" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos"><input type="checkbox" id="iCamb" name="nCamb" value="">
+                        <label for="iCamb">Cambagem:</label>
+                    </td>
+                    <td><input class="data" name="dataCamb" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos"><input type="checkbox" id="iTrocaOleo" name="nTrocaOleo" value="">
+                        <label for="iTrocaOleo">Troca de Óleo:</label>
+                    </td>
+                    <td><input class="data" name="dataTrocaOleo" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos"><input type="checkbox" id="iHig" name="nHig" value="">
+                        <label for="iHig">Higienização:</label>
+                    </td>
+                    <td><input class="data" name="dataHig" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td class="campos">
+                        <label for="iNome">Nome:</label>
+                    </td>
+                    <td><input type="text" id="iNome" name="nNome" value="" placeholder="Digite o nome" onblur="verificarNome()" onkeypress="removerVaziosNome()"></td>
+                </tr>
+                <tr>
+                    <td class="campos">
+                        <label for="icpf">CPF:</label>
+                    </td>
+                    <td><input type="text" id="icpf" name="nNome" value="" placeholder="xxx.xxx.xxx-xx" onblur="formatoCPF()" onkeypress="verificarCPF()"></td>
+                </tr>
+                <tr>
+                    <td class="campos">
+                        <label for="irg">Identidade:</label>
+                    </td>
+                    <td><input type="text" id="irg" name="nNome" value="" placeholder="xx.xxx.xxx-x" onblur="formatoRG()" onkeypress="verificarRG()"></td>
+                </tr>
+                <tr>
+                    <td class="campos">
+                        <label for="iCel">Celular:</label>
+                    </td>
+                    <td><input type="text" id="iCel" name="nCel" value="" placeholder="(xx)xxxxx-xxxx" onblur="formatoCel()" onkeypress="verificarCel()"></td>
+                </tr>
+                <tr>
+                    <td class="campos">
+                        <label for="iEmail">E-mail:</label>
+                    </td>
+                    <td><input type="text" id="iEmail" name="nMail" value="" placeholder="Digite o email" onblur="verificarEmail()"></td>
+                </tr>
+                <tr>
+                    <td class="campos">
+                        <label for="iEmail">Código Promocional:</label>
+                    </td>
+                    <td><input type="text" id="iCodigo" name="nMail" value="" placeholder="Digite o Código Promocional" onblur="verificarEmail()"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="CONFIRMAR" id="btEnviar"></td>
+                    <td><input type="reset" value="APAGAR" id="btApagar"></td>
+                </tr>
+            </table>
+        
+        </form>
+    </div>
+
+    
+    <div class="rotacao">
+        <img id="foto_pneu" src="./_img/Carro-Utilitário-Pneu-PNG.png">
+    </div>
+     
+    
+    <div class="rodape2">
+        .
+    </div>
+
+
+</body>
+</html>

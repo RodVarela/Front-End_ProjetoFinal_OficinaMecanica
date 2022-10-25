@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilos.css">
+    <link rel="stylesheet" href="_css/trabalhe.css">
+
+    <script type="text/javascript" src="_js/trabalhe.js"></script>
+
+    <title>Trabalhe Conosco</title>
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <img id="logo" src="_img/logo.png">
+
+        <nav class="menu">
+            <ul class="lista_menu">
+                <li class="lista"><a href="main.html">Principal</a></li>
+                <li class="lista"><a href="empresa.html">Sobre</a></li>
+                <li class="lista"><a href="servicos.html">Serviços</a></li>
+                <li class="lista"><a href="vendas.html">Vendas</a></li>
+                <li class="lista"><a href="contato.html">Contato</a></li>
+                <li class="lista"><a href="trabalhe.html">Trabalhe Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>BEM VINDO AO CADASTRO DE CURRÍCULO ONLINE</h1>
+        
+    <div id="divErro">
+      <p id="msgErro"></p>   
+    </div>
+
+
+    <div id="curriculo" >
+        <form action="CVRecebido.html" method="POST"> 
+            <table id="tabelaCV">
+                <!-- Informações pessoais-->
+                <tr class="centralizado">
+                    <td class="fundoescuro" colspan="5"><h3>INFORMAÇÕES PESSOAIS</h3></td>
+                </tr>
+    
+                <tr>
+                    <td>NOME COMPLETO:</td>
+                    <td colspan="2">
+                        <input type="text" name="nNome" id="iNome" value="" maxlength="30" size="46pt" placeholder="Digite seu nome completo" onblur="verificarNome('iNome')" onkeypress="removerVaziosNome('iNome')">
+                    </td>
+                    <td>NOME SOCIAL:</td>
+                    <td>
+                        <input type="text" name="nNomeS" id="iNomeSocial" value="" maxlength="30" placeholder="Nome Social" onblur="verificarNome('iNomeSocial')" onkeypress="removerVaziosNome('iNomeSocial')">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>E-MAIL:</td>
+                    <td colspan="2">
+                        <input type="email" name="nEmail" id="iEmail" value="" maxlength="30" size="46pt" placeholder="Digite seu e-mail" onblur="verificarEmail()">
+                    </td>
+                    <td>CELULAR:</td>
+                    <td>
+                        <input type="tel" name="nCelular" id="iCel" value="" placeholder="(xx)xxxxx-xxxx" onblur="formatoCel()" onkeypress="verificarCel()">
+                    </td>
+                </tr>
+                   
+                <tr>
+                    <td>GÊNERO:</td>
+                    <td colspan="2">
+                        <input type="radio" name="nGenero" Value="M" checked>Masculino
+                        <input type="radio" name="nGenero" Value="F">Feminino
+                        <input type="radio" name="nGenero" Value="O">Outros
+                    </td>
+                    <td>NASCIMENTO:</td>
+                    <td>
+                        <input type="text" name="nNascimento" id="iData" value="" maxlength="11" placeholder="dd/mm/aaaa" onblur="formatoData('iData')" onkeypress="verificarData('iData')">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>NOME DO CONJUGÊ:</td>
+                    <td colspan="2">
+                        <input type="text" name="nConj" id="iNomeConj" Value=""size="46pt" placeholder="Digite o nome do conjugê" onblur="verificarNome('iNomeConj')" onkeypress="removerVaziosNome('iNomeConj')">
+                    </td>
+                    <td>FILHOS:</td>
+                    <td>
+                        <input type="radio" name="nFilho" Value="S">Sim
+                        <input type="radio" name="nFilho" Value="N" checked>Não
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>ENDEREÇO:</td>
+                    <td colspan="3">
+                        <input type="text" name="nLogradouro" id="iEndereco" value="" size="72pt" placeholder="Informar endereço com número Ex: Rua...nº 56, Av...nº 5" onblur="verificarEndereco()">
+                    </td>
+                    <td>
+                        <input type="text" name="nComp" id="iComplemento" value="" placeholder="Complemento">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>-</td>
+                    <td colspan="2">
+                        <input type="text" name="nBairro" id="iBairro" value="" size="46pt" placeholder="Bairro" onblur="verificarLugar('iBairro')" onkeypress="removerVaziosLugar('iBairro')">
+                    </td>
+                    <td>
+                        <input type="text" name="nCidade" id="iCidade" value="" placeholder="Cidade" onblur="verificarLugar('iCidade')" onkeypress="removerVaziosLugar('iCidade')">
+                    </td>
+                    <td>
+                        <select id="optionUF" name="UF" required>
+                            <option value="" disabled selected hidden>Selecionar UF</option>
+                            <option value="RJ">RJ</option>
+                            <option value="SP">SP</option>
+                            <option value="MG">MG</option>
+                            <option value="ES">ES</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>POSSUI CARRO:</td>
+                    <td>
+                        <input type="radio" name="nCarro" Value="S">Sim
+                        <input type="radio" name="nCarro" Value="N" checked>Não
+                    </td>
+                    <td colspan="2">AUXÍLIO PARA TRANSPORTE:</td>
+                    <td>
+                        <input type="radio" name="nAuxTransp" Value="S">Sim
+                        <input type="radio" name="nAuxTransp" Value="N" checked>Não
+                    </td>
+                </tr>
+                <!-- Informações Profissionais-->             
+                <tr class="centralizado">
+                    <td class="fundoescuro" colspan="5"><h3>INFORMAÇÕES PROFISSIONAIS</h3></td>
+                </tr>
+                
+                <tr>
+                    <td>SUA PROFISSÃO:</td>
+                    <td colspan="4">
+                        <input type="text" name="nProf" id="iProfissao" value="" size="98pt" placeholder="Digite sua Profissão" onblur="verificarNome('iProfissao')" onkeypress="removerVaziosNome('iProfissao')">
+                    </td>
+                </tr>
+                
+                <tr class="centralizado">
+                    <td class="fundoescuroII" colspan="5">EXPERIÊNCIA (3 ÚLTIMAS EMPRESAS):</td>
+                </tr>
+    
+                <!--EMPRESA 1-->
+                <tr>
+                    <td class="empresas">EMPRESA 1</td>
+                    <td colspan="2">
+                        <input type="text" name="nEmpresa1" id="iEmpresa1" value="" size="46pt" placeholder="Digite o nome da empresa" onblur="verificarNome('iEmpresa1')" onkeypress="removerVaziosNome('iEmpresa1')">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="nFuncao1" id="iFuncao1" value="" size="46pt" placeholder="Digite a função" onblur="verificarNome('iFuncao1')" onkeypress="removerVaziosNome('iFuncao1')">
+                    </td>
+                </tr>
+                  
+                <tr class="descTrab">
+                    <td colspan="5">
+                        <input type="text" name="nDesc1" id="iDesc1" value="" size="122pt" style="height: 58pt;" placeholder="Digite a descrição das atividades" onblur="descAtividades('iDesc1')" >
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>DATA INICIAL:</td>
+                    <td>
+                        <input type="text" name="nDataI1" id="iDataI1" value="" placeholder="dd/mm/aaaa" onblur="formatoData('iDataI1')" onkeypress="verificarData('iDataI1')"></td>
+                    <td>DATA FINAL:</td>
+                    <td>
+                        <input type="text" name="nDataF1" id="iDataF1" value="" placeholder="dd/mm/aaaa" onblur="formatoData('iDataF1')" onkeypress="verificarData('iDataF1')"></td>
+                    <td><input type="checkbox" name="nEmpAtual1" value="S">Empresa Atual</td>
+                </tr>
+                
+                <!--EMPRESA 2-->
+                <tr>
+                    <td class="empresas">EMPRESA 2</td>
+                    <td colspan="2">
+                        <input type="text" name="nEmpresa2" id="iEmpresa2" value="" size="46pt" placeholder="Digite o nome da empresa" onblur="verificarNome('iEmpresa2')" onkeypress="removerVaziosNome('iEmpresa2')">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="nFuncao2" id="iFuncao2" value="" size="46pt" placeholder="Digite a função" onblur="verificarNome('iFuncao2')" onkeypress="removerVaziosNome('iFuncao2')">
+                    </td>
+                </tr>
+                  
+                <tr class="descTrab">
+                    <td colspan="5">
+                        <input type="text" name="nDesc2" id="iDesc2" value="" size="122pt" style="height: 58pt;" placeholder="Digite a descrição das atividades" onblur="descAtividades('iDesc2')">
+                    </td>
+                </tr>
+    
+                
+                <tr>
+                    <td>DATA INICIAL:</td>
+                    <td>
+                        <input type="text" name="nDataI2" id="iDataI2" value="" placeholder="dd/mm/aaaa" onblur="formatoData('iDataI2')" onkeypress="verificarData('iDataI2')"></td>
+                    <td>DATA FINAL:</td>
+                    <td>
+                        <input type="text" name="nDataF2" id="iDataF2" value="" placeholder="dd/mm/aaaa" onblur="formatoData('iDataF2')" onkeypress="verificarData('iDataF2')"></td>
+                    <td><input type="checkbox" name="nEmpAtual2" value="S">Empresa Atual</td>
+                </tr>
+    
+                <!--EMPRESA 3-->
+                <tr>
+                    <td class="empresas">EMPRESA 3</td>
+                    <td colspan="2">
+                        <input type="text" name="nEmpresa3" id="iEmpresa3" value="" size="46pt" placeholder="Digite o nome da empresa" onblur="verificarNome('iEmpresa3')" onkeypress="removerVaziosNome('iEmpresa3')">
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="nFuncao3" id="iFuncao3" value="" size="46pt" placeholder="Digite a função" onblur="verificarNome('iFuncao3')" onkeypress="removerVaziosNome('iFuncao3')">
+                    </td>
+                </tr>
+                  
+                <tr class="descTrab">
+                    <td colspan="5">
+                        <input type="text" name="nDesc3" id="iDesc3" value="" size="122pt" height="400pt" style="height: 58pt;" placeholder="Digite a descrição das atividades" onblur="descAtividades('iDesc3')">
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>DATA INICIAL:</td>
+                    <td>
+                        <input type="text" name="nDataI3" id="iDataI3" value="" placeholder="dd/mm/aaaa" onblur="formatoData('iDataI3')" onkeypress="verificarData('iDataI3')"></td>
+                    <td>DATA FINAL:</td>
+                    <td>
+                        <input type="text" name="nDataF3" id="iDataF3" value="" placeholder="dd/mm/aaaa" onblur="formatoData('iDataF3')" onkeypress="verificarData('iDataF3')"></td>
+                    <td><input type="checkbox" name="nEmpAtual3" value="S">Empresa Atual</td>
+                </tr>
+               
+            </table>
+    
+            <br>
+
+            <div class="buttons">
+                <input type="submit" id="idEnviar" name="nEnviar" value="Enviar">  
+                <input type="reset" id="idApagar" name="nApagar" value="Apagar">  
+            </div>
+            
+    
+        </form>
+    
+    </div>
+
+    
+
+
+</body>
+</html>

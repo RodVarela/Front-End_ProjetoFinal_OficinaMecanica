@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+    width: 900px;
+    margin: auto;
+} 
+
+h2{
+    margin-bottom: 2px;
+}
+
+ul#lista-vendas {
+    width: 720px;
+    margin: auto;
+    padding: 30px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#lista-vendas li {
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    border: 3px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px white;
+    box-sizing: border-box;
+}
+
+li div{
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 3px;
+    background-color: gray;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+img {
+    width: 213px;
+    height: 187px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+div.rodape4{
+    border-top: 1px solid rgb(107, 107, 107);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 598px;
+    background: url(../_img/asfalto.jpg) ;
+    background-size: 85%;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}
